@@ -7,9 +7,15 @@ body {
 h1 {
   font-family: 'Roboto', sans-serif;
 }
-a {
+a:link {
   color: #1a5cad;
   font-weight: 600;
+}
+a:visited, a:hover a:focus {
+  color: #2196cb;
+}
+a.light {
+  color: #29b6f6;
 }
 .parallax {
   background-image: url("../images/world_lights_bgnd.jpg");
@@ -18,14 +24,19 @@ a {
   background-size: cover;
 	background-position: 100% auto;
 	position:relative;
+  margin: 0 -20px;
 }
 .bgImageHome {
-  height: 184px;
+  min-height: 184px;
 }
 .bgImageProjects {
-  height: 334px;
+  min-height: 334px;
+  color: white;
+  padding-top: 50px;
 }
-
+.bgImageProjects p {
+  padding-top: 20px;
+}
 .logo {
   height: 167px;
   margin-top: 10px
@@ -100,7 +111,7 @@ button[type="submit"] {
   font-size: 18px;
   padding-top: 12px;
 }
-.project {
+.project, .textBlock {
   margin-top: 70px;
 }
 .project_img {
@@ -114,6 +125,16 @@ button[type="submit"] {
 }
 .project h2 {
   margin-top: 0;
+}
+.instructions {
+  background-color: #2d384a;
+  color: white;
+}
+.ship {
+  background-image: url("../images/spaceship.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  min-height: 600px;
 }
 .license, .badge {
   font-size: 14px;
@@ -149,6 +170,10 @@ footer {
     background-size: 38px auto;
 }
 /*helper styles*/
+
+.pad_top {
+  padding-top: 40px;
+}
 .pad_right {
   padding-right: 10px;
 }
