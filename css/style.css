@@ -1,5 +1,13 @@
 body {
   padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  color: #1a5cad;
 }
 .bgImage {
   background-image: url(../images/world_lights_sm_bgnd.jpg);
@@ -9,15 +17,117 @@ body {
   margin: 0 -20px;
 }
 .logo {
-  background-image: url(../images/code_nasa_logo.svg);
-  background-size: 263px 84px;
-  background-repeat: no-repeat;
-  width: 263px;
-  height: 84px;
+  height: 167px;
+  margin-top: 10px
 }
-input[type=search] {
+.nasa_logo {
+  margin: 27px 77px 33px 0;
+}
+.nasa_logo img {
+  width: 75px;
+}
+.main_link{
+  font-size: 19px;
+}
+
+/*search styles*/
+input[type=search], input[type=text] {
     background: none;
     border-right: none;
     border-left: none;
     border-top: none;
+    border-radius: 0;
+    font-size: 36px;
+    opacity: 1;
 }
+input::-webkit-input-placeholder {
+color: #e4edf7 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: #e4edf7 !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #e4edf7 !important;
+}
+
+input:-ms-input-placeholder {
+color: #e4edf7 !important;
+}
+.input-group {
+  margin-top: 20px;
+  margin-top: 50px;
+}
+.stylish-input-group .input-group-addon {
+    background: none !important;
+    border: 0;
+    right: 39px;
+    position: relative;
+  }
+.stylish-input-group .form-control{
+	border-right:0;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+  /*padding-bottom: 20px;*/
+  height: 50px;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+.form-control {
+  color: white;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+button[type="submit"] {
+  color: white;
+}
+.filtering {
+  color: #becee5;
+  font-size: 18px;
+  padding-top: 12px;
+}
+.project {
+  margin-top: 70px;
+}
+.project_img {
+  width: 100%;
+}
+.project h2, .project p, .license {
+  margin-bottom: 40px;
+}
+.project h2 {
+  margin-top: 0;
+}
+.license, .badge {
+  font-size: 14px;
+}
+.badge {
+    border: 1px solid #c7c6c6;
+    border-radius: 5px;
+    color: #767676;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 3px 6px;
+    min-width: 10px;
+    padding: 9px 13px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    background-color: transparent;
+}
+.ng-scope {
+  margin-left: -3px;
+  margin-top: 40px;
+}
+
+/*Overwrite to make the BootStrap container larger*/
+@media (min-width: 1400px) {
+    .container {
+        width: 1270px
+    }
