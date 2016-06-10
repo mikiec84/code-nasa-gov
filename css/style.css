@@ -11,13 +11,21 @@ a {
   color: #1a5cad;
   font-weight: 600;
 }
-.bgImage {
-  background-image: url(../images/world_lights_sm_bgnd.jpg);
-  background-position: center center;
+.parallax {
+  background-image: url("../images/world_lights_bgnd.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-  height: 184px;
-  margin: 0 -20px;
+	background-position: 100% auto;
+	position:relative;
 }
+.bgImageHome {
+  height: 184px;
+}
+.bgImageProjects {
+  height: 334px;
+}
+
 .logo {
   height: 167px;
   margin-top: 10px
@@ -29,7 +37,7 @@ a {
   width: 75px;
 }
 .main_link{
-  font-size: 19px;
+  font-size: 18px;
 }
 
 /*search styles*/
@@ -139,6 +147,10 @@ footer {
     background-position: left 0;
     background-repeat: no-repeat;
     background-size: 38px auto;
+}
+/*helper styles*/
+.pad_right {
+  padding-right: 10px;
 }
 
 /*Overwrite to make the BootStrap container larger*/
