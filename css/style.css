@@ -2,12 +2,14 @@ body {
   padding: 20px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  line-height: 1.5;
 }
 h1 {
   font-family: 'Roboto', sans-serif;
 }
 a {
   color: #1a5cad;
+  font-weight: 600;
 }
 .bgImage {
   background-image: url(../images/world_lights_sm_bgnd.jpg);
@@ -96,6 +98,9 @@ button[type="submit"] {
 .project_img {
   width: 100%;
 }
+.project_name a {
+  font-weight: 400;
+}
 .project h2, .project p, .license {
   margin-bottom: 40px;
 }
@@ -124,6 +129,16 @@ button[type="submit"] {
 .ng-scope {
   margin-left: -3px;
   margin-top: 40px;
+}
+footer p {
+    padding-left: 35px;
+    padding-top: 3px;
+}
+footer {
+    background-image: url("../images/nasa_logo_75.png");
+    background-position: left 0;
+    background-repeat: no-repeat;
+    background-size: 38px auto;
 }
 
 /*Overwrite to make the BootStrap container larger*/
