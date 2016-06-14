@@ -40,6 +40,7 @@
 
        <div class="container-fluid parallax bgImageProjects">
             <div class="container">
+              <div class="row">
 							<div class="col-md-8 col-md-push-2">
 
 	            <h1>How do I publish my open source project?</h1>
@@ -68,8 +69,9 @@
     </div>
 		<!-- end container -->
 
-    <div class="container-fluid">
-      <div class="row textBlock instructions">
+    <div class="container-fluid instructions">
+      <div class="container">
+      <div class="row textBlock">
 
         <div class="col-md-2">
           <div class="ship">
@@ -78,18 +80,277 @@
         </div>
 
         <div class="col-md-8">
-          <p>
-            Software release at NASA is governed by NPR 2210.1C. NPR 2210.1C establishes the roles, responsibilities, and procedures for reporting, reviewing, and releasing software under various conditions, including open source. Every center has a Software Release Authority (SRA). The SRA processes requests for software release and coordinates legal, export control, IT security, 508 compliance, and software engineering standards compliance reviews. Projects hoping to release software should contact their SRA early to discuss their goals and begin the reporting, review, and release process.
-          </p>
-          <p>
-            Follow the instructjions below for a summary of the steps necessary to go from innovation to open source:
-          </p>
+
+    <div class="page-header">
+        <h3 id="timeline">Follow these steps to publish on code.nasa.gov</h3>
+    </div>
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge danger"><i class="glyphicon glyphicon-heart" padding-right""></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Step 1</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Create some great software.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-envelope"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Step 2</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Submit a request to release your project as Open Source to your center Software Release Authority (SRA) using the contact info in <a class="light" href="#table">the below table.</a></p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Step 3</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Recieve approval from your center SRA to release as Open Source.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted success">
+          <div class="timeline-badge success"><i class="glyphicon glyphicon-bullhorn"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Step 4</h4>
+            </div>
+            <div class="timeline-body">
+              <p><a class="light"href="https://github.com/join">Register on Github.com</a> using NASA email.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-pencil"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Step 5</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Submit a NAMS request - <a class="light" href="https://nams.nasa.gov/nams/asset/227756">HQ AGCY NASA Github Collaborator Form</a>.</p>
+            </div>
+          </div>
+        </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge success"><i class="glyphicon glyphicon-user"></i></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="timeline-title">Step 6</h4>
+                </div>
+                <div class="timeline-body">
+                  <p>Meet with us. We can assist you with:</p>
+                    <ul>
+                      <li>joining the NASA Org</li>
+                      <li>building your teams</li>
+                      <li>answering your questions</li>
+                    </ul>
+                </div>
+              </div>
+        </li>
+          <li>
+            <div class="timeline-badge warning"><i class="glyphicon glyphicon-console"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Step 7</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Transfer or import your source code into <a class="light" href="https://github.com/nasa/open-source-catalog">NASA Org on GitHub.com</a>.</p>
+              </div>
+            </div>
+          </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"><i class="glyphicon glyphicon-open"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Step 8</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Update the NASA Open Source Catalog via a pull request to register your project’s meta-data.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Step 9</h4>
+            </div>
+            <div class="timeline-body">
+              <p>View your project on code.nasa.gov and <a href="https://help.github.com/articles/be-social/">socialize!</a></p>
+            </div>
+          </div>
+        </li>
+    </ul>
+
         </div>
+        <!-- end column -->
 
 	    </div>
 			<!-- end row -->
     </div>
+  </div>
 		<!-- end container -->
+
+  <div class="container">
+    <div class="row">
+              <div class="col-md-8 col-md-push-2 hidePhone box ng-scope">
+        	<h3>Center SRAs</h3>
+        	<table id="table"class="table table-hover table-bordered">
+        		<thead>
+        			<tr><th class="header">Center</th>
+        			<th class="header">Name</th>
+        			<th class="header">Title</th>
+        			<th class="header">Phone</th>
+        			<th class="header">Email</th>
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<!-- ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">AFRC</td>
+        				<td class="ng-binding">Earl Adams</td>
+        				<td class="ng-binding">SRA</td>
+        				<td class="ng-binding">661.276.5307</td>
+        				<td><a href="mailto:earl.s.adams@nasa.gov" class="ng-binding">earl.s.adams@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">AFRC</td>
+        				<td class="ng-binding">Samantha Hull</td>
+        				<td class="ng-binding">SRA Alternate</td>
+        				<td class="ng-binding">661.276.3368</td>
+        				<td><a href="mailto:samantha.m.hull@nasa.gov" class="ng-binding">samantha.m.hull@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">ARC</td>
+        				<td class="ng-binding">Martha Del Alto</td>
+        				<td class="ng-binding">SRA</td>
+        				<td class="ng-binding">650.604.4865</td>
+        				<td><a href="mailto:martha.e.delalto@nasa.gov" class="ng-binding">martha.e.delalto@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">ARC</td>
+        				<td class="ng-binding">Kim Chrestenson</td>
+        				<td class="ng-binding">SRA Alternate</td>
+        				<td class="ng-binding">650.604.5063</td>
+        				<td><a href="mailto:kim.l.chrestenson@nasa.gov" class="ng-binding">kim.l.chrestenson@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">GRC</td>
+        				<td class="ng-binding">Kim Dalgleish-Miller</td>
+        				<td class="ng-binding">SRA</td>
+        				<td class="ng-binding">216.433.8047</td>
+        				<td><a href="mailto:kimberly.a.dalgleish@nasa.gov" class="ng-binding">kimberly.a.dalgleish@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">GRC</td>
+        				<td class="ng-binding">Jason Hanna</td>
+        				<td class="ng-binding">SRA Alternate</td>
+        				<td class="ng-binding">216.433.6731</td>
+        				<td><a href="mailto:jason.m.hanna@nasa.gov" class="ng-binding">jason.m.hanna@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">GSFC</td>
+        				<td class="ng-binding">Nona K. Cheeks</td>
+        				<td class="ng-binding">SRA</td>
+        				<td class="ng-binding">301.286.5810</td>
+        				<td><a href="mailto:nona.k.cheeks@nasa.gov" class="ng-binding">nona.k.cheeks@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">GSFC</td>
+        				<td class="ng-binding">Enidia Santiago-Arce</td>
+        				<td class="ng-binding">SRA Alternate</td>
+        				<td class="ng-binding">301.286.8497</td>
+        				<td><a href="mailto:enidia.santiago-arce@nasa.gov" class="ng-binding">enidia.santiago-arce@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">HQ</td>
+        				<td class="ng-binding">Liteshia Dennis</td>
+        				<td class="ng-binding">SRA</td>
+        				<td class="ng-binding">202.358.4778</td>
+        				<td><a href="mailto:liteshia.b.dennis@nasa.gov" class="ng-binding">liteshia.b.dennis@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">HQ</td>
+        				<td class="ng-binding">Stanley Artis</td>
+        				<td class="ng-binding">SRA</td>
+        				<td class="ng-binding">202.358.2032</td>
+        				<td><a href="mailto:stanley.artis-1@nasa.gov" class="ng-binding">stanley.artis-1@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">JPL</td>
+        				<td class="ng-binding">Brian Morrison</td>
+        				<td class="ng-binding">SRA</td>
+        				<td class="ng-binding">818.354.2458</td>
+        				<td><a href="mailto:brian.a.morrison@jpl.nasa.gov" class="ng-binding">brian.a.morrison@jpl.nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">JSC</td>
+        				<td class="ng-binding">Michelle Kamman</td>
+        				<td class="ng-binding">SRA</td>
+        				<td class="ng-binding">281.483.7548</td>
+        				<td><a href="mailto:michelle.kamman-1@nasa.gov" class="ng-binding">michelle.kamman-1@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">KSC</td>
+        				<td class="ng-binding">Roger Liang</td>
+        				<td class="ng-binding">SRA</td>
+        				<td class="ng-binding">321.861.2224</td>
+        				<td><a href="mailto:roger.h.liang@nasa.gov" class="ng-binding">roger.h.liang@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">KSC</td>
+        				<td class="ng-binding">Lew Parrish</td>
+        				<td class="ng-binding">SRA Alternate</td>
+        				<td class="ng-binding">321.867.5033</td>
+        				<td><a href="mailto:lewis.m.parrish@nasa.gov" class="ng-binding">lewis.m.parrish@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">LaRC</td>
+        				<td class="ng-binding">Bonnie Lumanog</td>
+        				<td class="ng-binding">SRA</td>
+        				<td class="ng-binding">757.864.2933</td>
+        				<td><a href="mailto:b.lumanog@nasa.gov" class="ng-binding">b.lumanog@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">MSFC</td>
+        				<td class="ng-binding">Danny Garcia</td>
+        				<td class="ng-binding">SRA</td>
+        				<td class="ng-binding">256.544.4138</td>
+        				<td><a href="mailto:danny.garcia-1@nasa.gov" class="ng-binding">danny.garcia-1@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">MSFC</td>
+        				<td class="ng-binding">Carolyn McMillian</td>
+        				<td class="ng-binding">SRA Alternate</td>
+        				<td class="ng-binding">256.544.9151</td>
+        				<td><a href="mailto:carolyn.e.mcmillan@nasa.gov" class="ng-binding">carolyn.e.mcmillan@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false --><tr ng-repeat="sra in sras | orderBy:'Center':false" class="ng-scope">
+        				<td class="ng-binding">SSC</td>
+        				<td class="ng-binding">John Lansaw</td>
+        				<td class="ng-binding">SRA</td>
+        				<td class="ng-binding">228.688.1962</td>
+        				<td><a href="mailto:john.lansaw-1@nasa.gov" class="ng-binding">john.lansaw-1@nasa.gov</a></td>
+        			</tr><!-- end ngRepeat: sra in sras | orderBy:'Center':false -->
+        		</tbody>
+        	</table>
+        </div>
+        <!-- end col -->
+        <div class="col-md-8 col-md-push-2 additional">
+          <h3>Additional Details</h3>
+          <p class="pad_top">
+            One initiates the software review process by reporting the software as described in NPR 2210.1C (e.g., submitting a description of the software to be released, the individuals involved in its creation, development timeline, available documentation, and related topics). Depending on center procedures, this information may be captured through the NASA Technology Reporting System or standard form NF1679. Contact your SRA for the specific procedure used at your center.
+            Each piece of software is unique, and must be reviewed on a case-by-case basis. Generally speaking, however, the review process will address the following considerations:
+          </p>
+          <ul class="pad_top">
+            <li> <strong>Legal.</strong> It is important to ensure that NASA has appropriate rights in software, including subcomponents, before NASA releases that material outside the agency. Software is rarely developed in isolation. If your project uses external dependencies, you must provide details about such packages or sources when you report your software. (See NPR 2210.1C, Chapter 2 for details on reporting software.) The terms and conditions governing external software impact NASA's right to use and release software, and must be thoroughly analyzed before NASA can release software incorporating that external software. NASA attorneys will also help identify the set of terms and conditions that should govern a particular piece of software when NASA releases it. Per current NASA policy, NASA releases open source software under the NASA Open Source Agreement (NOSA) unless external Open Source Software incorporated into the NASA Open Source Software requires use of a different open source license or unless approved by Center Patent or IP Counsel. Such determinations must be made by your center intellectual property counsel before NASA may release the software in question.</li>
+            <li><strong>Export Control.</strong> The Export Administration Regulations (EAR) and the International Traffic in Arms Regulations (ITAR), among other laws and policies, restrict which NASA technology may be publicly disclosed. Software falling within the scope of these laws or policies cannot be released open source, and may be subject to release restrictions. Your local export control staff can help you determine whether export control laws apply to your technology.</li>
+            <li> <strong> IT Security.</strong> Generally speaking, released software should not contain any information peculiar to NASA, such as user names, passwords, database credentials, IP addresses, host names, firewall and network information, or any other data which would expose or create vulnerabilities. Your SRA and IT Security staff will help you understand the types of risks occasioned by software release, and will work with you to remove elements of your software which may give rise to a vulnerability prior to release.</li>
+            <li><strong>508 Compliance.</strong> When developing, procuring, maintaining, or using Electronic and Information Technology (EIT), Federal agencies must ensure that Federal employees with disabilities have access to and use of information and data that is comparable to that for other employees.</li>
+            <li><strong>Software Engineering Requirements.</strong> NASA has established formal software engineering requirements in NPR 7150.2A. These requirements govern all software development activities and must be followed throughout a project's development life cycle. As part of the software release process, your center SRA and Engineering Technical Authority for software will work with you to verify (or establish) your software classification and ensure compliance with the corresponding engineering requirements prior to release. For this area of inquiry in particular it is best to front-load compliance by adhering to the software engineering requirements with a documented compliance matrix from the outset. Otherwise, you may incur significant delay and expense in obtaining compliance prior to release.</li>
+          </ul>
+          <p class="pad_top">
+            Depending on the number of projects being assessed for release at any given time general workloads and backlogs, traversing the release process can take anywhere from 3 to 6 months. The process may take longer for complex or novel release requests. Be sure to factor these time tables (with consultation with your SRA) into your project schedules.
+          </p>
+
+        </div>
+
+    </div>
+    <!-- end row -->
+
+  </div>
+  <!-- end container -->
     <div class="container">
       <footer class="row">
         <div class="col-md-6">
