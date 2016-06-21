@@ -3,6 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  min-width: 370px;
 }
 h1 {
   font-family: 'Roboto', sans-serif;
@@ -18,10 +19,10 @@ a.light {
   color: #29b6f6;
 }
 .parallax {
-  background-image: url("../images/world_lights_bgnd.jpg");
+  background-image: url("../images/code_nasa_background.jpg");
+  /*background-image: url("../images/code_nasa_background_v2.jpg");*/
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
 	background-position: 100% auto;
 	position:relative;
   margin: 0 -20px;
@@ -39,16 +40,21 @@ a.light {
 }
 .logo {
   height: 167px;
-  margin-top: 10px
+  margin-top: 10px;
 }
 .nasa_logo {
   margin: 27px 77px 33px 0;
+  text-align: right;
 }
 .nasa_logo img {
   width: 75px;
 }
 .main_link{
   font-size: 18px;
+}
+button[type="submit"]:focus {
+    outline-color: white;
+    padding-bottom: 5px;
 }
 
 /*search styles*/
@@ -178,6 +184,9 @@ footer {
 }
 .pad_right {
   padding-right: 10px;
+}
+.align {
+  text-align: right;
 }
 
 /*timeline*/
@@ -372,8 +381,41 @@ footer {
         }
 }
 
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.logo, .align {
+  text-align: center;
+}
+input[type=search], input[type=text] {
+    font-size: 21px;
+}
+.filtering {
+  font-size: 14px;
+}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+
 /*Overwrite to make the BootStrap container larger*/
 @media (min-width: 1400px) {
     .container {
-        width: 1270px
+        width: 1270px;
     }
