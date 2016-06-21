@@ -3,7 +3,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  min-width: 370px;
 }
 h1 {
   font-family: 'Roboto', sans-serif;
@@ -407,11 +406,22 @@ input[type=search], input[type=text] {
 .filtering {
   font-size: 14px;
 }
+.logo img {
+  width: 250px;
+}
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-
+  input[type=search], input[type=text] {
+      font-size: 16px;
+  }
+  .logo {
+    height: 120px;
+  }
+  .logo img {
+    width: 220px;
+  }
 }
 
 /*Overwrite to make the BootStrap container larger*/
