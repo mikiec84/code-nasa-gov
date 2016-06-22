@@ -81,16 +81,25 @@ color: #e4edf7 !important;
 input:-ms-input-placeholder {
 color: #e4edf7 !important;
 }
-.input-group {
-  margin-top: 20px;
-  margin-top: 50px;
-}
-.stylish-input-group .input-group-addon {
+.search {
     background: none !important;
     border: 0;
     right: 39px;
     position: relative;
   }
+.btn.focus, .btn:focus, .btn:hover {
+    color: #29b6f6;
+}
+.input-group {
+  margin-top: 20px;
+  margin-top: 50px;
+}
+/*.stylish-input-group .input-group-addon {
+    background: none !important;
+    border: 0;
+    right: 39px;
+    position: relative;
+  }*/
 .stylish-input-group .form-control{
 	border-right:0;
 	box-shadow:0 0 0;
@@ -98,10 +107,10 @@ color: #e4edf7 !important;
   /*padding-bottom: 20px;*/
   height: 50px;
 }
-.stylish-input-group button{
+/*.stylish-input-group button{
     border:0;
     background:transparent;
-}
+}*/
 .form-control {
   color: white;
   padding: 0;
